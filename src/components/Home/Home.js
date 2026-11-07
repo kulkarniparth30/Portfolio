@@ -9,6 +9,8 @@ import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaProjectDiagram, FaFileDownload } from "react-icons/fa";
 
 function Home() {
+  const resumePublicUrl = `${process.env.PUBLIC_URL || ""}/Parth_Kulkarni_Resume.pdf`;
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -26,7 +28,7 @@ function Home() {
               </h1>
 
               <h3 className="heading-title" style={{ paddingLeft: "45px", paddingTop: "10px" }}>
-                AI/ML Engineer | Generative AI & Agentic Systems Developer
+                AI/ML Engineer | Generative AI &amp; Agentic Systems Developer
               </h3>
 
               <div style={{ padding: "30px 45px 20px 45px", textAlign: "left" }}>
@@ -37,7 +39,7 @@ function Home() {
                 Building privacy-first, agentic AI applications: LangGraph/MCP multi-agent systems, RAG pipelines, and fully on-device LLM inference in the browser.
               </p>
 
-              <div className="hero-cta-btns" style={{ paddingLeft: "45px", paddingTop: "25px", display: "flex", gap: "15px", flexWrap: "wrap" }}>
+              <div className="hero-cta-btns" style={{ paddingLeft: "45px", paddingTop: "25px", display: "flex", gap: "15px", flexWrap: "wrap", position: "relative", zIndex: 10 }}>
                 <Button
                   as={Link}
                   to="/project"
@@ -47,8 +49,11 @@ function Home() {
                   <FaProjectDiagram style={{ marginRight: "8px" }} /> Explore My Projects
                 </Button>
                 <Button
-                  as={Link}
-                  to="/resume"
+                  as="a"
+                  href={resumePublicUrl}
+                  download="Parth_Kulkarni_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   variant="outline-primary"
                   className="hero-btn hero-btn-secondary"
                 >
@@ -73,50 +78,52 @@ function Home() {
 
       <Home2 />
 
-      <Container>
-        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/kulkarniparth30"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                  title="GitHub"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/parth-kulkarni-39260432a/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                  title="LinkedIn"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="mailto:kulkarniparth0930@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                  title="Email"
-                >
-                  <AiOutlineMail />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+      <Container fluid className="home-about-section" id="connect">
+        <Container>
+          <Row>
+            <Col md={12} className="home-about-social">
+              <h1 style={{ fontSize: "2.2em" }}>FIND ME ON</h1>
+              <p style={{ color: "#d1c4e9", fontSize: "1.05em" }}>
+                Feel free to <span className="purple">connect </span>with me
+              </p>
+              <ul className="home-about-social-links">
+                <li className="social-icons">
+                  <a
+                    href="https://github.com/kulkarniparth30"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                    aria-label="GitHub Profile"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/parth-kulkarni-39260432a/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="mailto:kulkarniparth0930@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                    aria-label="Send Email"
+                  >
+                    <AiOutlineMail />
+                  </a>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </section>
   );
