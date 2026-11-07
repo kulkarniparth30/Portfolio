@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070e24"/>
+      <stop offset="50%" stop-color="#0f1938"/>
+      <stop offset="100%" stop-color="#050817"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142145" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0d152e" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="amberAlert" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Window Chrome Header -->
+  <rect x="25" y="25" width="750" height="400" rx="14" fill="#0a122c" stroke="#1e3a8a" stroke-width="1.5"/>
+  <rect x="25" y="25" width="750" height="40" rx="14" fill="#111c42"/>
+  <circle cx="50" cy="45" r="6" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="6" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="6" fill="#10b981"/>
+  <text x="110" y="50" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="12" font-weight="600">PharmaComplaint AI — QMS Complaint Intake &amp; LangGraph CAPA Engine</text>
+  <rect x="620" y="34" width="140" height="22" rx="11" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="635" y="49" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">● 21 CFR Part 11 QMS</text>
+
+  <!-- LangGraph Workflow Pipeline Header Strip -->
+  <rect x="40" y="75" width="720" height="42" rx="8" fill="url(#cardGrad)" stroke="#1d4ed8" stroke-width="1"/>
+  
+  <!-- Step Nodes in LangGraph -->
+  <g transform="translate(55, 87)">
+    <rect x="0" y="0" width="85" height="20" rx="4" fill="#047857"/>
+    <text x="8" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">1. Ingest (Done)</text>
+    
+    <text x="92" y="14" fill="#60a5fa" font-size="11">➔</text>
+    <rect x="108" y="0" width="95" height="20" rx="4" fill="#047857"/>
+    <text x="114" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">2. Extract (Done)</text>
+
+    <text x="210" y="14" fill="#60a5fa" font-size="11">➔</text>
+    <rect x="226" y="0" width="105" height="20" rx="4" fill="#047857"/>
+    <text x="232" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">3. Validate (Done)</text>
+
+    <text x="338" y="14" fill="#60a5fa" font-size="11">➔</text>
+    <rect x="354" y="0" width="125" height="20" rx="4" fill="#b91c1c"/>
+    <text x="360" y="14" fill="#fecaca" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">4. Risk Triage (CRIT)</text>
+
+    <text x="486" y="14" fill="#60a5fa" font-size="11">➔</text>
+    <rect x="502" y="0" width="95" height="20" rx="4" fill="#1d4ed8"/>
+    <text x="508" y="14" fill="#bfdbfe" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">5. CAPA Action</text>
+
+    <text x="604" y="14" fill="#60a5fa" font-size="11">➔</text>
+    <rect x="620" y="0" width="80" height="20" rx="4" fill="#334155"/>
+    <text x="628" y="14" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">6. Summary</text>
+  </g>
+
+  <!-- Left: Extracted Complaint Form -->
+  <rect x="40" y="127" width="370" height="280" rx="10" fill="url(#cardGrad)" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="55" y="150" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="13" font-weight="700">Automated Intake &amp; Classification</text>
+  
+  <rect x="55" y="162" width="340" height="42" rx="6" fill="#0d1b3d" stroke="#2563eb" stroke-width="0.8"/>
+  <text x="65" y="178" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="600">PRODUCT &amp; BATCH DETAILS</text>
+  <text x="65" y="194" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">Amoxicillin 500mg Oral Capsules · Batch #BX-2026-09</text>
+
+  <rect x="55" y="212" width="340" height="52" rx="6" fill="#1e132b" stroke="#dc2626" stroke-width="1"/>
+  <text x="65" y="228" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="700">CRITICAL RISK CLASSIFICATION: CLASS 1 DEFECT</text>
+  <text x="65" y="244" fill="#fee2e2" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10.5">Particulate matter contamination reported in sealed blister pack.</text>
+  <text x="65" y="257" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5">Severity: 9/10 · Occurrence: 3/10 · Detection: 4/10 · RPN: 108</text>
+
+  <rect x="55" y="272" width="340" height="120" rx="6" fill="#0f1f44"/>
+  <text x="65" y="290" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">LangGraph Extracted Metadata</text>
+  <text x="65" y="310" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">• Complainant: Metro Central Hospital Pharmacy</text>
+  <text x="65" y="328" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">• Incident Date: 2026-02-14 | Regulatory Body: US FDA / CDSCO</text>
+  <text x="65" y="346" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">• GAMP-5 Risk Category: High (Patient Safety Affected)</text>
+  <text x="65" y="364" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">• Automated Audit Log: SHA-256 Hash Verified</text>
+
+  <!-- Right: CAPA Actions & AI Assistant Panel -->
+  <rect x="425" y="127" width="335" height="280" rx="10" fill="url(#cardGrad)" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="440" y="150" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="13" font-weight="700">Recommended CAPA Actions</text>
+
+  <!-- CAPA Action 1 -->
+  <rect x="440" y="165" width="305" height="58" rx="6" fill="#15264f" stroke="#3b82f6" stroke-width="0.8"/>
+  <text x="452" y="182" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">CAPA-2026-081: Immediate Quarantine</text>
+  <text x="452" y="198" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">Quarantine entire Batch #BX-2026-09 across warehouses.</text>
+  <text x="452" y="213" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Assigned: QA Release Team · SLA: 4 Hours</text>
+
+  <!-- CAPA Action 2 -->
+  <rect x="440" y="231" width="305" height="58" rx="6" fill="#15264f" stroke="#3b82f6" stroke-width="0.8"/>
+  <text x="452" y="248" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">CAPA-2026-082: Optical Inspection Calibration</text>
+  <text x="452" y="264" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">Inspect Packaging Line 4 cameras &amp; vision sensor thresholds.</text>
+  <text x="452" y="279" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Assigned: Engineering Lead · SLA: 24 Hours</text>
+
+  <!-- Drafted QMS Response -->
+  <rect x="440" y="297" width="305" height="98" rx="6" fill="#0d1838" stroke="#6366f1" stroke-width="0.8"/>
+  <text x="452" y="315" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">AI-Generated Regulatory Draft</text>
+  <text x="452" y="333" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5">"Investigation into complaint #QMS-7892 initiated under SOP-QA-012.</text>
+  <text x="452" y="349" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5">Batch retain samples inspected; root-cause analysis in progress..."</text>
+  <text x="452" y="375" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="700">Model: Groq Llama 3.3 70B · Latency: 320ms</text>
+</svg>

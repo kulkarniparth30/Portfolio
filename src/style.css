@@ -759,3 +759,175 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+
+/* ------------------------------------- */
+/* Parth Kulkarni AI Engineer Enhancements */
+/* ------------------------------------- */
+
+.brand-logo {
+  text-decoration: none !important;
+}
+
+.brand-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(199, 112, 240, 0.5);
+  transition: all 0.3s ease;
+}
+
+.brand-text:hover {
+  color: #cd5ff8;
+}
+
+.heading-title {
+  font-size: 1.35em !important;
+  color: #a78bfa;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-btn {
+  font-size: 1.05rem !important;
+  padding: 10px 22px !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 15px rgba(114, 9, 183, 0.4) !important;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(114, 9, 183, 0.6) !important;
+}
+
+.hero-btn-secondary {
+  color: #e0aaff !important;
+  border-color: #9d4edd !important;
+  background-color: rgba(98, 54, 134, 0.15) !important;
+}
+
+.hero-btn-secondary:hover {
+  color: #ffffff !important;
+  background-color: #623686 !important;
+  border-color: #be6adf !important;
+}
+
+.floating-ai-hero {
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 10px 25px rgba(142, 68, 173, 0.35));
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.nav-social-btn {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 15px !important;
+}
+
+.nav-social-btn-inner {
+  background-color: rgba(147, 76, 206, 0.25) !important;
+  border: 1px solid rgba(190, 106, 223, 0.4) !important;
+  color: #ffffff !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.nav-social-btn-inner:hover {
+  background-color: #801f95 !important;
+  border-color: #cd5ff8 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 0 10px rgba(205, 95, 248, 0.5) !important;
+}
+
+.active-nav-link {
+  color: #cd5ff8 !important;
+  font-weight: 600 !important;
+}
+
+.active-nav-link::after {
+  width: 100% !important;
+}
+
+.skill-category-title {
+  font-size: 1.45rem;
+  color: #e0d6eb;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid rgba(199, 112, 240, 0.2);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+.skill-category-block {
+  background: rgba(22, 14, 38, 0.45);
+  border: 1px solid rgba(142, 68, 173, 0.25);
+  border-radius: 12px;
+  padding: 20px 24px 10px 24px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(8px);
+}
+
+/* Modern Project Action Buttons */
+.project-action-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+  padding: 8px 18px !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+.project-btn-gh {
+  background: rgba(124, 58, 237, 0.25) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(168, 85, 247, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.project-btn-gh:hover {
+  background: rgba(124, 58, 237, 0.6) !important;
+  color: #ffffff !important;
+  border-color: #c084fc !important;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.45) !important;
+  transform: translateY(-2px) !important;
+}
+
+.project-btn-demo {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35) !important;
+}
+
+.project-btn-demo:hover {
+  background: linear-gradient(135deg, #9333ea 0%, #db2777 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.55) !important;
+  transform: translateY(-2px) !important;
+}

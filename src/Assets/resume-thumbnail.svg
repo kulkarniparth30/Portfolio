@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="100%" height="100%">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a148c"/>
+      <stop offset="100%" stop-color="#7b2cbf"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Page Background -->
+  <rect x="0" y="0" width="595" height="842" fill="#ffffff" rx="4"/>
+  <rect x="0" y="0" width="595" height="8" fill="url(#headerGrad)"/>
+
+  <!-- Header -->
+  <text x="297" y="45" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="bold" fill="#3b0764" text-anchor="middle">PARTH KULKARNI</text>
+  <text x="297" y="65" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Pune, Maharashtra, India  |  +91 8999126149  |  kulkarniparth0930@gmail.com  |  LinkedIn  |  GitHub  |  Kaggle</text>
+  <line x1="36" y1="76" x2="559" y2="76" stroke="#7b2cbf" stroke-width="1.5"/>
+
+  <!-- Summary -->
+  <text x="36" y="96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">SUMMARY</text>
+  <text x="36" y="112" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#334155">AI Engineering student experienced in building and evaluating LLM inference and RAG pipelines, deploying open-weight</text>
+  <text x="36" y="125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#334155">models, embeddings, vector databases, GPUs, containers, and cloud infrastructure with strong Python fundamentals.</text>
+  <line x1="36" y1="135" x2="559" y2="135" stroke="#e2e8f0" stroke-width="0.8"/>
+
+  <!-- Education -->
+  <text x="36" y="153" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">EDUCATION</text>
+  <text x="36" y="169" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">JSPM's Rajarshi Shahu College of Engineering (RSCOE), Pune</text>
+  <text x="559" y="169" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#475569" text-anchor="end">Expected 2028</text>
+  <text x="36" y="182" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8.5" font-style="italic" fill="#475569">B.Tech in Computer Engineering | CGPA: 8.11/10</text>
+  <text x="36" y="195" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#64748b">Relevant Coursework: Data Structures &amp; Algorithms, DBMS, OOP, Distributed System Design, Linear Algebra &amp; Probability</text>
+  <text x="36" y="210" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">Mahatma Phule Junior College, Ahmadpur — HSC (Class XII)</text>
+  <text x="559" y="210" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#475569" text-anchor="end">MHT-CET: 95.25 | 2024</text>
+  <line x1="36" y1="220" x2="559" y2="220" stroke="#e2e8f0" stroke-width="0.8"/>
+
+  <!-- Projects -->
+  <text x="36" y="238" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">PROJECTS</text>
+  
+  <!-- ToolBot -->
+  <text x="36" y="254" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1e293b">ToolBot — LangGraph + MCP Multi-Agent AI Chatbot</text>
+  <text x="559" y="254" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#6a1b9a" text-anchor="end">2026</text>
+  <text x="36" y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#64748b">Python, LangChain, LangGraph, MCP, FastAPI, REST APIs, pytest, LLM Evaluation, Git/GitHub</text>
+  <text x="46" y="280" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Built a multi-agent chatbot with LangGraph where LLM selects tools across hosted MCP servers (Context7, DeepWiki, Semgrep).</text>
+  <text x="46" y="292" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Engineered prompt and tool-routing logic to eliminate tool chaining failures and cut hallucinated tool calls.</text>
+  <text x="46" y="304" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Automated test suite in pytest validating tool selection and response relevance across multi-step scenarios.</text>
+
+  <!-- KisanSetu -->
+  <text x="36" y="322" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1e293b">KisanSetu — Agentic Multimodal AI Platform for Crop Disease Diagnosis</text>
+  <text x="559" y="322" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#6a1b9a" text-anchor="end">2026</text>
+  <text x="36" y="335" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#64748b">Python, FastAPI, LangChain, Gemini 2.5 Flash, Vector Databases, ResNet50, Google Cloud Platform, Twilio</text>
+  <text x="46" y="348" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Built RAG pipeline grounding Gemini 2.5 Flash responses against agricultural knowledge base to eliminate advice hallucinations.</text>
+  <text x="46" y="360" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Offline ResNet50 image-classification fallback for low-connectivity environments; containerized GCP deployment with Twilio IVR.</text>
+  <text x="46" y="372" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Finished Top 10 in both rounds of Datathon ML Hackathon conducted by PCCOE College.</text>
+
+  <!-- ResumeAgent -->
+  <text x="36" y="390" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1e293b">ResumeAgent — AI Resume Analyser, ATS Ranker &amp; Skill-Gap Detector</text>
+  <text x="559" y="390" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#6a1b9a" text-anchor="end">2026</text>
+  <text x="36" y="403" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#64748b">Python, LangGraph, FastAPI, React, Vite, Tailwind CSS, Pydantic, Supabase, Docker, Render</text>
+  <text x="46" y="416" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Built LLM-powered analyser parsing PDF/DOCX resumes, scoring against job descriptions with a visual skill-gap matrix.</text>
+  <text x="46" y="428" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Designed Skill Hallucination Detector flagging claimed skills lacking project proof; LangGraph agentic workflow with Gemini/Groq.</text>
+  <text x="46" y="440" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Co-authored research paper 'AI-Powered Career Diagnostics and Resume Enhancement System' (under review).</text>
+  <line x1="36" y1="452" x2="559" y2="452" stroke="#e2e8f0" stroke-width="0.8"/>
+
+  <!-- Technical Skills -->
+  <text x="36" y="470" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">TECHNICAL SKILLS</text>
+  <text x="36" y="486" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155"><tspan font-weight="bold">Languages:</tspan> Python, C++, C, JavaScript, TypeScript, SQL</text>
+  <text x="36" y="499" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155"><tspan font-weight="bold">AI Engineering:</tspan> LLMs, LangChain, LangGraph, RAG Pipelines, AI Agents, Multi-Agent Systems, MCP, Prompt Engineering, Guardrails</text>
+  <text x="36" y="512" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155"><tspan font-weight="bold">Software Engineering:</tspan> REST API Design (FastAPI, Flask), Distributed System Design, React, HTML/CSS, Git/GitHub, Docker, CI/CD</text>
+  <text x="36" y="525" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155"><tspan font-weight="bold">Databases &amp; Cloud:</tspan> MySQL, Vector Databases, Supabase, IndexedDB, Google Cloud Platform, GPUs</text>
+  <text x="36" y="538" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155"><tspan font-weight="bold">Machine Learning:</tspan> Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Model Evaluation &amp; Benchmarking</text>
+  <line x1="36" y1="548" x2="559" y2="548" stroke="#e2e8f0" stroke-width="0.8"/>
+
+  <!-- Achievements -->
+  <text x="36" y="566" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">ACHIEVEMENTS &amp; ACTIVITIES</text>
+  <text x="46" y="582" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Competed in 5+ national hackathons (DevClash 2026, IBM Dev Day) delivering production-oriented LLM prototypes.</text>
+  <text x="46" y="595" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Published 5+ datasets and 10+ notebooks on Kaggle (9,400+ views on top dataset); Core Member, ML &amp; DS Team, Coding Club RSCOE.</text>
+  <line x1="36" y1="605" x2="559" y2="605" stroke="#e2e8f0" stroke-width="0.8"/>
+
+  <!-- Certifications -->
+  <text x="36" y="623" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">CERTIFICATIONS</text>
+  <text x="46" y="639" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Oracle Certified Foundations Associate – Agentic AI (Oracle)</text>
+  <text x="46" y="652" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Machine Learning with Python (IBM)</text>
+  <text x="46" y="665" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#334155">• Oracle Cloud Infrastructure 2025 Certified Data Science Professional</text>
+</svg>

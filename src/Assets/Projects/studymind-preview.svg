@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0728"/>
+      <stop offset="50%" stop-color="#190e3d"/>
+      <stop offset="100%" stop-color="#0b041a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24134a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#140a2c" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Window Chrome Header -->
+  <rect x="25" y="25" width="750" height="400" rx="14" fill="#120926" stroke="#4c1d95" stroke-width="1.5"/>
+  <rect x="25" y="25" width="750" height="40" rx="14" fill="#1c0f38"/>
+  <circle cx="50" cy="45" r="6" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="6" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="6" fill="#10b981"/>
+  <text x="110" y="50" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="12" font-weight="600">StudyMind AI — On-Device WebLLM RAG &amp; CrewAI Engine (OSDHack 2026)</text>
+  <rect x="620" y="34" width="140" height="22" rx="11" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="635" y="49" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">● 100% Client-Side RAG</text>
+
+  <!-- Sidebar -->
+  <rect x="40" y="80" width="200" height="330" rx="10" fill="url(#cardGrad)" stroke="#3b1d6e" stroke-width="1"/>
+  <text x="55" y="105" fill="#e0aaff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="13" font-weight="700">Indexed Documents</text>
+  
+  <rect x="52" y="120" width="176" height="38" rx="6" fill="#2d1754" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="65" y="136" fill="#f3e8ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">📄 CS402_Distributed_Sys.pdf</text>
+  <text x="65" y="150" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">148 Chunks · IndexedDB Cached</text>
+
+  <rect x="52" y="165" width="176" height="38" rx="6" fill="#1b0e36"/>
+  <text x="65" y="181" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">📄 ML_Transformers_Notes.pdf</text>
+  <text x="65" y="195" fill="#7c6f96" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">92 Chunks · Vector Normalized</text>
+
+  <!-- Multi-Agent Orchestration Box -->
+  <text x="55" y="235" fill="#e0aaff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="12" font-weight="700">CrewAI Agent Crew</text>
+  <rect x="52" y="248" width="176" height="28" rx="6" fill="#162e3d" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="62" y="266" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">🤖 Quiz Generation Agent</text>
+
+  <rect x="52" y="284" width="176" height="28" rx="6" fill="#162e3d" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="62" y="302" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">📅 Study Planner Agent</text>
+
+  <rect x="52" y="320" width="176" height="28" rx="6" fill="#162e3d" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="62" y="338" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">📝 Flashcard Creator Agent</text>
+
+  <rect x="52" y="360" width="176" height="36" rx="6" fill="#2d1445" stroke="#ec4899" stroke-width="0.8"/>
+  <text x="65" y="376" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">⚡ Engine: WebLLM</text>
+  <text x="65" y="389" fill="#fbcfe8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Llama-3.2-1B-Instruct (WebGPU)</text>
+
+  <!-- Main Chat & RAG Panel -->
+  <rect x="255" y="80" width="505" height="330" rx="10" fill="url(#cardGrad)" stroke="#3b1d6e" stroke-width="1"/>
+  
+  <!-- Query Message -->
+  <rect x="275" y="100" width="465" height="42" rx="8" fill="#231442" stroke="#8b5cf6" stroke-width="0.8"/>
+  <text x="290" y="118" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">STUDENT QUERY</text>
+  <text x="290" y="133" fill="#f3e8ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">How does the 2-phase commit protocol ensure atomicity in distributed transactions?</text>
+
+  <!-- Retrieved Context Banner -->
+  <rect x="275" y="152" width="465" height="32" rx="6" fill="#132b38" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="290" y="172" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">🔍 RAG Retrieval: 3 Chunks (Cosine Sim: 0.884, 0.862) from CS402_Distributed_Sys.pdf#p42</text>
+
+  <!-- Streaming Assistant Response -->
+  <rect x="275" y="194" width="465" height="150" rx="8" fill="#170c2e" stroke="#6b21a8" stroke-width="0.8"/>
+  <text x="290" y="214" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">STUDYMIND AI (In-Browser WebGPU Streaming)</text>
+  <text x="290" y="233" fill="#e2d9ee" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">The Two-Phase Commit (2PC) guarantees all-or-nothing atomicity across distributed nodes:</text>
+  
+  <text x="300" y="254" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10.5">1. Prepare Phase: Coordinator sends PREPARE. Cohorts execute locally &amp; vote VOTE_COMMIT.</text>
+  <text x="300" y="272" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10.5">2. Commit Phase: If all agree, coordinator logs GLOBAL_COMMIT; otherwise broadcasts ABORT.</text>
+  <text x="300" y="290" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">📌 Verified Citation: CS402_Distributed_Sys.pdf · Section 8.3 "Consensus &amp; Transaction Protocols"</text>
+
+  <rect x="290" y="306" width="130" height="24" rx="4" fill="#2d1445" stroke="#f472b6" stroke-width="0.8"/>
+  <text x="302" y="322" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">⚡ WebGPU: 48 tokens/s</text>
+
+  <rect x="430" y="306" width="150" height="24" rx="4" fill="#0f2b38" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="442" y="322" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">🔒 Network: 0 Bytes Sent</text>
+
+  <!-- Input Bar -->
+  <rect x="275" y="356" width="395" height="38" rx="6" fill="#1f113b" stroke="#4c1d95" stroke-width="1"/>
+  <text x="290" y="380" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">Ask StudyMind about your lecture notes...</text>
+  <rect x="680" y="356" width="60" height="38" rx="6" fill="url(#accentPurple)"/>
+  <text x="696" y="380" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="12" font-weight="700">Ask</text>
+</svg>

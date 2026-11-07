@@ -1,17 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import aiHero from "../../Assets/ai-hero.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import Techstack from "../About/Techstack";
-import Github from "../About/Github";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import { FaLinkedinIn, FaProjectDiagram, FaFileDownload } from "react-icons/fa";
 
 function Home() {
   return (
@@ -19,84 +14,104 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+                Hi There!
               </h1>
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> PARTH KULKARNI</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <h3 className="heading-title" style={{ paddingLeft: "45px", paddingTop: "10px" }}>
+                AI/ML Engineer | Generative AI & Agentic Systems Developer
+              </h3>
+
+              <div style={{ padding: "30px 45px 20px 45px", textAlign: "left" }}>
                 <Type />
+              </div>
+
+              <p className="hero-intro" style={{ paddingLeft: "45px", paddingRight: "30px", fontSize: "1.15em", color: "#e0d6eb" }}>
+                Building privacy-first, agentic AI applications: LangGraph/MCP multi-agent systems, RAG pipelines, and fully on-device LLM inference in the browser.
+              </p>
+
+              <div className="hero-cta-btns" style={{ paddingLeft: "45px", paddingTop: "25px", display: "flex", gap: "15px", flexWrap: "wrap" }}>
+                <Button
+                  as={Link}
+                  to="/project"
+                  variant="primary"
+                  className="hero-btn"
+                >
+                  <FaProjectDiagram style={{ marginRight: "8px" }} /> Explore My Projects
+                </Button>
+                <Button
+                  as={Link}
+                  to="/resume"
+                  variant="outline-primary"
+                  className="hero-btn hero-btn-secondary"
+                >
+                  <FaFileDownload style={{ marginRight: "8px" }} /> Download Resume
+                </Button>
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Col md={5} style={{ paddingBottom: 20 }} className="text-center">
+              <div className="hero-image-wrapper">
+                <img
+                  src={aiHero}
+                  alt="Parth Kulkarni - AI Engineer"
+                  className="img-fluid floating-ai-hero"
+                  style={{ maxHeight: "480px" }}
+                />
+              </div>
             </Col>
           </Row>
         </Container>
       </Container>
+
       <Home2 />
 
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
-            <h1>Find Me On</h1>
+            <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/kulkarniparth30"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.linkedin.com/in/parth-kulkarni-39260432a/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="mailto:kulkarniparth0930@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  title="Email"
                 >
-                  <AiFillInstagram />
+                  <AiOutlineMail />
                 </a>
               </li>
             </ul>

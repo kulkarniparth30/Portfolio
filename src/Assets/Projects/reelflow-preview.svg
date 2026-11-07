@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14061a"/>
+      <stop offset="50%" stop-color="#240b2e"/>
+      <stop offset="100%" stop-color="#0e0414"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d103b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#190624" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="reelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Window Chrome Header -->
+  <rect x="25" y="25" width="750" height="400" rx="14" fill="#160821" stroke="#6b21a8" stroke-width="1.5"/>
+  <rect x="25" y="25" width="750" height="40" rx="14" fill="#260f38"/>
+  <circle cx="50" cy="45" r="6" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="6" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="6" fill="#10b981"/>
+  <text x="110" y="50" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="12" font-weight="600">ReelFlow AI — Automated Viral Reel &amp; Short-Form Video Generator</text>
+  <rect x="620" y="34" width="140" height="22" rx="11" fill="#431407" stroke="#f97316" stroke-width="1"/>
+  <text x="635" y="49" fill="#fb923c" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">● 1080x1920 60FPS MP4</text>
+
+  <!-- Left: Vertical Reel Phone Mockup (9:16 aspect ratio preview) -->
+  <rect x="50" y="80" width="180" height="330" rx="20" fill="#09030d" stroke="#d946ef" stroke-width="2"/>
+  
+  <!-- Phone Screen Content -->
+  <rect x="56" y="86" width="168" height="318" rx="16" fill="url(#reelGrad)" opacity="0.35"/>
+  
+  <!-- Audio wave animation inside reel -->
+  <rect x="70" y="140" width="140" height="110" rx="10" fill="#1a0b29" stroke="#f472b6" stroke-width="1"/>
+  <circle cx="140" cy="180" r="24" fill="#ec4899" opacity="0.3"/>
+  <polygon points="135,170 152,180 135,190" fill="#ffffff"/>
+  <text x="80" y="222" fill="#fbcfe8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="700">Ken Burns Zoom Transition</text>
+  <text x="88" y="238" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="8.5">Audio Ducking: -14dB</text>
+
+  <!-- Burned Dynamic Captions -->
+  <rect x="66" y="280" width="148" height="42" rx="6" fill="#000000" opacity="0.75"/>
+  <text x="74" y="297" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="800">"5 SECRET AI TOOLS IN 2026"</text>
+  <text x="74" y="312" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="8.5">Burned Dynamic Captions (FFmpeg)</text>
+
+  <!-- Reel stats overlays -->
+  <text x="70" y="345" fill="#f472b6" font-size="9">❤️ 24.8k</text>
+  <text x="120" y="345" fill="#f472b6" font-size="9">💬 812</text>
+  <text x="165" y="345" fill="#f472b6" font-size="9">🚀 5.2k</text>
+
+  <rect x="70" y="365" width="140" height="24" rx="4" fill="url(#accentOrange)"/>
+  <text x="85" y="381" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">⬇ Download 1080p</text>
+
+  <!-- Right: Video Editing Pipeline & Controls -->
+  <rect x="250" y="80" width="510" height="330" rx="10" fill="url(#cardGrad)" stroke="#581c87" stroke-width="1"/>
+  
+  <!-- Studio Pipeline Header -->
+  <text x="270" y="105" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="13" font-weight="700">Multi-Track Video &amp; Voiceover Synthesis</text>
+
+  <!-- Uploaded Media Strips -->
+  <rect x="270" y="118" width="470" height="60" rx="8" fill="#1b092b" stroke="#7e22ce" stroke-width="0.8"/>
+  <text x="282" y="136" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">IMAGE SEQUENCER &amp; TIMINGS</text>
+  
+  <rect x="282" y="144" width="90" height="26" rx="4" fill="#3b0764"/>
+  <text x="288" y="161" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Img 1 (2.5s) · Fade</text>
+
+  <rect x="380" y="144" width="95" height="26" rx="4" fill="#3b0764"/>
+  <text x="386" y="161" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Img 2 (3.0s) · Zoom</text>
+
+  <rect x="483" y="144" width="95" height="26" rx="4" fill="#3b0764"/>
+  <text x="489" y="161" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Img 3 (2.8s) · Slide</text>
+
+  <rect x="586" y="144" width="95" height="26" rx="4" fill="#3b0764"/>
+  <text x="592" y="161" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9">Img 4 (3.2s) · KenB</text>
+
+  <!-- Voiceover & Soundtrack Track -->
+  <rect x="270" y="188" width="470" height="65" rx="8" fill="#1b092b" stroke="#7e22ce" stroke-width="0.8"/>
+  <text x="282" y="206" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">AUDIO SYNTHESIS &amp; DUCKING</text>
+  <text x="282" y="224" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">🗣️ AI Voiceover: Google Text-to-Speech (gTTS) · Natural Cadence</text>
+  <text x="282" y="242" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">🎵 Background Music: Synthwave Drive · Volume Ducked automatically during speech</text>
+
+  <!-- FFmpeg Progress Bar & Render Status -->
+  <rect x="270" y="263" width="470" height="80" rx="8" fill="#170624" stroke="#d946ef" stroke-width="1"/>
+  <text x="282" y="283" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">FFmpeg Multi-Pass Render Queue</text>
+  <text x="630" y="283" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">● 100% Complete</text>
+
+  <!-- Progress Bar Track -->
+  <rect x="282" y="295" width="446" height="12" rx="6" fill="#2d103b"/>
+  <rect x="282" y="295" width="446" height="12" rx="6" fill="url(#accentOrange)"/>
+
+  <text x="282" y="326" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5">Video Codec: libx264 · Audio Codec: aac (192kbps) · Filter: zoompan=z='min(zoom+0.0015,1.25)'</text>
+
+  <!-- Bottom CTA Actions -->
+  <rect x="270" y="355" width="225" height="38" rx="6" fill="#3b0764" stroke="#a855f7" stroke-width="0.8"/>
+  <text x="285" y="378" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">⚡ Render Time: 4.8 Seconds</text>
+
+  <rect x="510" y="355" width="230" height="38" rx="6" fill="url(#accentOrange)"/>
+  <text x="532" y="378" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">🎬 Generate New Reel (Free)</text>
+</svg>

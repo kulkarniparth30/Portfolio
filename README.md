@@ -1,76 +1,158 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
+# Parth Kulkarni — AI/ML Engineer Portfolio & RAG Assistant
+
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <h2>Parth Kulkarni | Portfolio & Parth AI</h2>
+  <p><strong>AI/ML Engineer | Generative AI Developer</strong></p>
+  <p>Building intelligent applications using Machine Learning, Generative AI, Large Language Models, RAG, and Agentic AI.</p>
 </div>
 
-<br/>
+---
 
-<center>
+## 🌟 Key Features
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+1. **80/20 Visual Preservation & Modernization**:
+   - Preserved the signature dark purple aesthetic, starry particle background, and responsive grid layout.
+   - Enhanced hero section with customized AI/ML neural network illustration, interactive typewriting, and quick CTA buttons.
+2. **Personal Branding**:
+   - Replaced all previous developer references across the entire site, metadata, open graph tags, navbar, footer, and resume.
+3. **Categorized AI & ML Technical Skillset**:
+   - Organized into clean, modern skill cards: Programming Languages, Machine Learning, Deep Learning, Generative AI & Agentic Systems, Backend & Databases, and Tools & Deployment.
+4. **Configurable AI/ML Projects**:
+   - Modular project showcase driven by `src/components/Projects/projectsData.js` featuring Multi-Agent workflows, Enterprise Multimodal RAG, NL-to-SQL Analytics, and Deep Learning vision models.
+5. **RAG-Powered Chatbot ("Parth AI")**:
+   - Floating chat interface with subtle glowing animation and expand/collapse modal.
+   - Connected to a **FastAPI backend** running a **Retrieval-Augmented Generation (RAG)** pipeline over a structured Markdown knowledge base.
+   - Grounded responses, source citations, suggested questions, auto-scrolling, and conversation memory.
+6. **Blog Section**:
+   - Cleanly removed per project specifications.
 
-</center>
+---
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+## 🏗️ Architecture
 
-## TL;DR
+```
+Portfolio Frontend (React + React-Bootstrap)
+      │
+      ▼  HTTP POST /api/chat
+FastAPI Backend (backend/main.py)
+      │
+      ▼
+RAG Pipeline (backend/rag.py)
+      │
+      ▼ Semantic Retrieval
+Knowledge Base (backend/knowledge_base/*.md)
+      │
+      ▼ Context Augmentation
+LLM Generation (Gemini 2.5 Flash / Grounded Semantic Fallback)
+      │
+      ▼ JSON Response with Answer & Citations
+Parth AI Chatbot Interface
+```
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+---
 
-## Built With
+## 🚀 Getting Started
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+### 1. Prerequisites
+- **Node.js** (v16+ recommended)
+- **Python** (v3.10+ recommended)
 
-This project was built using these technologies.
+### 2. Frontend Setup & Run
+From the root directory:
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+```bash
+# Install dependencies (if not already installed)
+npm install
 
-## Features
+# Start React development server
+npm start
+```
+The application will launch at **[http://localhost:3000](http://localhost:3000)**.
 
-**📖 Multi-Page Layout**
+### 3. Backend Setup & Run
+Open a separate terminal in the project directory:
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+```bash
+# Navigate to backend directory
+cd backend
 
-**📱 Fully Responsive**
+# Install Python dependencies
+pip install -r requirements.txt
 
-## Getting Started
+# (Optional) Set your Gemini API Key for dynamic LLM generation:
+# On Windows PowerShell:
+$env:GEMINI_API_KEY="your-google-gemini-api-key"
+# On Linux/macOS:
+export GEMINI_API_KEY="your-google-gemini-api-key"
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+# Run FastAPI with Uvicorn
+python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+```
+The FastAPI backend will start at **[http://127.0.0.1:8000](http://127.0.0.1:8000)**.
+- Interactive API Docs (Swagger): **[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)**
+- Health check: **[http://127.0.0.1:8000/api/health](http://127.0.0.1:8000/api/health)**
 
-## 🛠 Installation and Setup Instructions
+---
 
-1. Installation: `npm install`
+## 📚 Customizing the Knowledge Base
 
-2. In the project directory, you can run: `npm start`
+The chatbot grounds all answers in editable markdown files located inside `backend/knowledge_base/`:
+- `about_me.md`: Background, contact details, and engineering philosophy.
+- `education.md`: Degrees, coursework, and academic focus.
+- `skills.md`: Technical competencies across languages, ML, DL, and GenAI.
+- `projects.md`: Project summaries, architecture details, and GitHub links.
+- `certifications.md`: Courses and certifications.
+- `achievements.md`: Accomplishments and milestones.
+- `resume.md`: Resume highlights.
+- `career_interests.md`: Target roles and domains.
+- `frequently_asked_questions.md`: Common questions and answers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+To hot-reload changes without restarting the backend, you can trigger:
+```bash
+curl -X POST http://127.0.0.1:8000/api/reload-kb
+```
 
-## Usage Instructions
+---
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+## 🐳 Docker Containerization
 
-### Show your support
+Run the entire full-stack application (React frontend + FastAPI vector search backend) with a single command:
 
-Give a ⭐ if you like this website!
+```bash
+docker-compose up --build
+```
 
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+- **Frontend**: Accessible at `http://localhost:3000`
+- **Backend API**: Accessible at `http://localhost:8001` (API Docs at `http://localhost:8001/docs`)
+
+---
+
+## 🌐 Deployment Guide
+
+### Frontend Deployment (e.g., Vercel / Netlify)
+1. Build the production bundle:
+   ```bash
+   npm run build
+   ```
+2. Deploy the `build` directory or link your GitHub repository to Vercel.
+3. Configure the environment variable:
+   ```env
+   REACT_APP_API_URL=https://your-backend-domain.com
+   ```
+
+### Backend Deployment (e.g., Render / Railway / Cloud Run)
+1. Deploy the `backend/` directory as a Python web service.
+2. Build command:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start command:
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port $PORT
+   ```
+4. Set environment variable `GEMINI_API_KEY` in your hosting dashboard.
+
+---
+
+## 📄 License
+MIT License.

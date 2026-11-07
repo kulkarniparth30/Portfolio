@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: parth-portfolio-backend
+    ports:
+      - "8001:8000"
+    environment:
+      - PORT=8000
+      - KMP_DUPLICATE_LIB_OK=TRUE
+      # - GEMINI_API_KEY=${GEMINI_API_KEY}
+    restart: unless-stopped
+    volumes:
+      - ./backend/knowledge_base:/app/knowledge_base
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_API_URL=http://localhost:8001
+    container_name: parth-portfolio-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

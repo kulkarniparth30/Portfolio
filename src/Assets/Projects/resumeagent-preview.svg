@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="raBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190a2a"/>
+      <stop offset="100%" stop-color="#0a0312"/>
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="0" y="0" width="800" height="480" rx="12" fill="url(#raBg)" stroke="#c084fc" stroke-width="2"/>
+  
+  <!-- Titlebar -->
+  <rect x="0" y="0" width="800" height="42" rx="12" fill="#240c3c"/>
+  <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="21" r="6" fill="#10b981"/>
+  <text x="400" y="26" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#f472b6" text-anchor="middle">ResumeAgent — ATS Ranker &amp; Hallucination Detector [FastAPI + React]</text>
+
+  <!-- Left: A4 Resume Editor Preview & ATS Score -->
+  <rect x="24" y="60" width="360" height="395" rx="8" fill="#150824" stroke="#7e22ce" stroke-width="1.2"/>
+  <text x="44" y="88" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#e879f9">📄 Live A4 Resume Editor &amp; ATS Score</text>
+
+  <!-- Score Gauge & Overview -->
+  <g transform="translate(44, 105)">
+    <rect x="0" y="0" width="320" height="90" rx="6" fill="#200d36" stroke="#c084fc" stroke-width="1"/>
+    <!-- Circular Score Gauge -->
+    <circle cx="50" cy="45" r="32" fill="#0d0416" stroke="#374151" stroke-width="6"/>
+    <circle cx="50" cy="45" r="32" fill="none" stroke="#10b981" stroke-width="6" stroke-dasharray="160" stroke-dashoffset="25"/>
+    <text x="50" y="50" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#34d399" text-anchor="middle">88%</text>
+    <text x="96" y="38" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#ffffff">ATS Match Rating</text>
+    <text x="96" y="56" font-family="monospace" font-size="10" fill="#a78bfa">Target: Senior GenAI Engineer</text>
+    <text x="96" y="72" font-family="monospace" font-size="9" fill="#10b981">✓ Verified LangGraph Agent Flow</text>
+  </g>
+
+  <!-- Hallucination Detector Alert -->
+  <g transform="translate(44, 210)">
+    <rect x="0" y="0" width="320" height="110" rx="6" fill="#2d0b28" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#f87171">⚠️ Skill Hallucination Detector (Flagged)</text>
+    <text x="14" y="44" font-family="monospace" font-size="10" fill="#fecaca">Claim: "Kubernetes Cluster Administrator"</text>
+    <text x="14" y="62" font-family="monospace" font-size="9.5" fill="#fca5a5">Diagnosis: No corresponding project proof or</text>
+    <text x="14" y="76" font-family="monospace" font-size="9.5" fill="#fca5a5">production workload citations found in text.</text>
+    <text x="14" y="96" font-family="monospace" font-size="9.5" font-weight="bold" fill="#38bdf8">&gt; Suggestion: Replace with Docker containerization.</text>
+  </g>
+
+  <!-- PDF Export Status -->
+  <g transform="translate(44, 335)">
+    <rect x="0" y="0" width="320" height="100" rx="6" fill="#18092d" stroke="#581c87" stroke-width="1"/>
+    <text x="14" y="24" font-family="monospace" font-size="10" fill="#cbd5e1">• Gemini-Primary / Groq-Fallback LLM Layer</text>
+    <text x="14" y="44" font-family="monospace" font-size="10" fill="#cbd5e1">• Supabase PostgreSQL Database &amp; Auth</text>
+    <text x="14" y="64" font-family="monospace" font-size="10" fill="#cbd5e1">• Instant PDF / DOCX parsing &amp; vector indexing</text>
+    <text x="14" y="84" font-family="monospace" font-size="10" font-weight="bold" fill="#00f5d4">✓ Shipped with Docker on Render</text>
+  </g>
+
+  <!-- Right: Visual Skill-Gap Matrix -->
+  <rect x="405" y="60" width="370" height="395" rx="8" fill="#130722" stroke="#7e22ce" stroke-width="1.2"/>
+  <text x="425" y="88" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#c084fc">📊 Visual Skill-Gap Matrix</text>
+
+  <g transform="translate(425, 110)">
+    <!-- Skill 1 -->
+    <text x="0" y="16" font-family="monospace" font-size="11" fill="#ffffff">LangGraph &amp; Multi-Agent Systems</text>
+    <rect x="0" y="24" width="330" height="12" rx="6" fill="#2d124d"/>
+    <rect x="0" y="24" width="310" height="12" rx="6" fill="#10b981"/>
+    <text x="315" y="20" font-family="monospace" font-size="9" fill="#34d399">94%</text>
+
+    <!-- Skill 2 -->
+    <text x="0" y="58" font-family="monospace" font-size="11" fill="#ffffff">FastAPI &amp; REST Microservices</text>
+    <rect x="0" y="66" width="330" height="12" rx="6" fill="#2d124d"/>
+    <rect x="0" y="66" width="295" height="12" rx="6" fill="#10b981"/>
+    <text x="315" y="62" font-family="monospace" font-size="9" fill="#34d399">90%</text>
+
+    <!-- Skill 3 -->
+    <text x="0" y="100" font-family="monospace" font-size="11" fill="#ffffff">RAG &amp; Vector Databases</text>
+    <rect x="0" y="108" width="330" height="12" rx="6" fill="#2d124d"/>
+    <rect x="0" y="108" width="280" height="12" rx="6" fill="#10b981"/>
+    <text x="315" y="104" font-family="monospace" font-size="9" fill="#34d399">85%</text>
+
+    <!-- Skill 4 (Gap) -->
+    <text x="0" y="142" font-family="monospace" font-size="11" fill="#ffffff">Kubernetes / Distributed Orchestration</text>
+    <rect x="0" y="150" width="330" height="12" rx="6" fill="#2d124d"/>
+    <rect x="0" y="150" width="120" height="12" rx="6" fill="#ef4444"/>
+    <text x="315" y="146" font-family="monospace" font-size="9" fill="#f87171">36%</text>
+
+    <!-- Paper Note -->
+    <rect x="0" y="180" width="330" height="120" rx="6" fill="#1f0a35" stroke="#a855f7" stroke-width="1"/>
+    <text x="14" y="205" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00f5d4">📝 Research Publication</text>
+    <text x="14" y="226" font-family="monospace" font-size="9.5" fill="#f1f5f9">"AI-Powered Career Diagnostics and</text>
+    <text x="14" y="240" font-family="monospace" font-size="9.5" fill="#f1f5f9">Resume Enhancement System"</text>
+    <text x="14" y="260" font-family="monospace" font-size="9" fill="#a78bfa">Co-authored paper (Currently under peer review)</text>
+    <text x="14" y="280" font-family="monospace" font-size="9" font-weight="bold" fill="#f472b6">Features: ATS NLP, Hallucination Auditing</text>
+  </g>
+</svg>

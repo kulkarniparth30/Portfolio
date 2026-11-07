@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c1053"/>
+      <stop offset="100%" stop-color="#120624"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be6adf"/>
+      <stop offset="50%" stop-color="#9d4edd"/>
+      <stop offset="100%" stop-color="#00f5d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Glowing Circle -->
+  <circle cx="160" cy="160" r="148" fill="url(#bgGrad)" stroke="url(#ringGrad)" stroke-width="4"/>
+
+  <!-- AI Ring Tech Nodes -->
+  <circle cx="160" cy="12" r="5" fill="#00f5d4"/>
+  <circle cx="308" cy="160" r="5" fill="#be6adf"/>
+  <circle cx="160" cy="308" r="5" fill="#00f5d4"/>
+  <circle cx="12" cy="160" r="5" fill="#be6adf"/>
+
+  <!-- Developer Silhouette / Character -->
+  <!-- Shoulders / Jacket -->
+  <path d="M 65 290 Q 160 230 255 290 L 260 305 L 60 305 Z" fill="#2d1950" stroke="#7b2cbf" stroke-width="2"/>
+  <path d="M 125 245 L 160 280 L 195 245 Z" fill="#3c1e6d"/>
+
+  <!-- Neck -->
+  <rect x="142" y="195" width="36" height="40" rx="4" fill="#f0be9b"/>
+
+  <!-- Head -->
+  <ellipse cx="160" cy="155" rx="48" ry="54" fill="#f5caa6"/>
+
+  <!-- Hair -->
+  <path d="M 112 150 C 108 105, 145 92, 175 95 C 205 98, 215 118, 208 145 C 195 115, 140 120, 112 150 Z" fill="#20152b"/>
+
+  <!-- Glasses / Modern Specs with Purple Tint -->
+  <rect x="122" y="142" width="30" height="20" rx="6" fill="#1b1233" stroke="#be6adf" stroke-width="2" opacity="0.9"/>
+  <rect x="168" y="142" width="30" height="20" rx="6" fill="#1b1233" stroke="#be6adf" stroke-width="2" opacity="0.9"/>
+  <line x1="152" y1="152" x2="168" y2="152" stroke="#be6adf" stroke-width="2.5"/>
+
+  <!-- Smile -->
+  <path d="M 148 185 Q 160 194 172 185" fill="none" stroke="#683b2b" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Code/AI Matrix Floaties -->
+  <g opacity="0.8">
+    <text x="50" y="80" fill="#be6adf" font-family="monospace" font-size="12" font-weight="bold">&lt;AI/&gt;</text>
+    <text x="230" y="90" fill="#00f5d4" font-family="monospace" font-size="12" font-weight="bold">{RAG}</text>
+    <text x="45" y="220" fill="#00f5d4" font-family="monospace" font-size="11" font-weight="bold">PyTorch</text>
+    <text x="240" y="215" fill="#be6adf" font-family="monospace" font-size="11" font-weight="bold">FastAPI</text>
+  </g>
+</svg>

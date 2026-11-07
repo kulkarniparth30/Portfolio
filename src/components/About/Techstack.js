@@ -1,143 +1,108 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import Go from "../../Assets/TechIcons/go.svg";
-import C from "../../Assets/TechIcons/C++.svg";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import HaskellIcon from "../../Assets/TechIcons/Haskell.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
-import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import Git from "../../Assets/TechIcons/Git.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
-import Redis from "../../Assets/TechIcons/Redis.svg";
-import Docker from "../../Assets/TechIcons/Docker.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
-import Redux from "../../Assets/TechIcons/Redux.svg";
-import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
-import MUI from "../../Assets/TechIcons/MUI.svg";
-import Postman from "../../Assets/TechIcons/Postman.svg";
-import AWS from "../../Assets/TechIcons/AWS.svg";
-import Kafka from "../../Assets/TechIcons/Kafka.svg";
+import { Row, Col } from "react-bootstrap";
+import {
+  SiPython,
+  SiCplusplus,
+  SiPytorch,
+  SiScikitlearn,
+  SiFastapi,
+  SiPostgresql,
+  SiDocker,
+  SiGit,
+  SiGithub,
+  SiJavascript,
+  SiGooglecloud,
+} from "react-icons/si";
+import {
+  FaBrain,
+  FaDatabase,
+  FaRobot,
+  FaProjectDiagram,
+  FaSearch,
+  FaShieldAlt,
+  FaTerminal,
+  FaMicrochip,
+  FaLayerGroup,
+  FaCogs,
+  FaDesktop,
+} from "react-icons/fa";
+
+const skillCategories = [
+  {
+    category: "AI, LLMs & Agentic Systems",
+    skills: [
+      { name: "LangGraph", icon: <FaProjectDiagram color="#be6adf" /> },
+      { name: "Multi-Agent Systems", icon: <FaRobot color="#00f5d4" /> },
+      { name: "RAG Pipelines", icon: <FaSearch color="#c770f0" /> },
+      { name: "Model Context Protocol (MCP)", icon: <FaCogs color="#00f5d4" /> },
+      { name: "CrewAI", icon: <FaBrain color="#e0aaff" /> },
+      { name: "WebLLM (On-Device Inference)", icon: <FaDesktop color="#00f5d4" /> },
+      { name: "Prompt Engineering", icon: <FaTerminal color="#ffb703" /> },
+      { name: "Guardrails & AI Safety", icon: <FaShieldAlt color="#be6adf" /> },
+      { name: "LangSmith & Langfuse", icon: <FaSearch color="#9d4edd" /> },
+      { name: "Vector Databases & Embeddings", icon: <FaLayerGroup color="#00f5d4" /> },
+    ],
+  },
+  {
+    category: "Programming Languages",
+    skills: [
+      { name: "Python", icon: <SiPython color="#3776AB" /> },
+      { name: "C++", icon: <SiCplusplus color="#00599C" /> },
+      { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+      { name: "SQL", icon: <FaDatabase color="#c770f0" /> },
+    ],
+  },
+  {
+    category: "Backend & Systems",
+    skills: [
+      { name: "FastAPI", icon: <SiFastapi color="#009688" /> },
+      { name: "Python asyncio", icon: <FaCogs color="#3776AB" /> },
+      { name: "REST APIs", icon: <FaMicrochip color="#00f5d4" /> },
+      { name: "Supabase", icon: <FaDatabase color="#3ECF8E" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
+    ],
+  },
+  {
+    category: "Machine Learning & Core Data",
+    skills: [
+      { name: "PyTorch", icon: <SiPytorch color="#EE4C2C" /> },
+      { name: "Scikit-Learn", icon: <SiScikitlearn color="#F7931E" /> },
+      { name: "Transformers & Tokenizers", icon: <FaBrain color="#e0aaff" /> },
+      { name: "Pandas & NumPy", icon: <FaDatabase color="#c770f0" /> },
+    ],
+  },
+  {
+    category: "Tools, DevOps & Cloud",
+    skills: [
+      { name: "Git", icon: <SiGit color="#F05032" /> },
+      { name: "GitHub", icon: <SiGithub color="#ffffff" /> },
+      { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+      { name: "Google Cloud Platform", icon: <SiGooglecloud color="#4285F4" /> },
+    ],
+  },
+];
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" />
-        <div className="tech-icons-text">C++</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Go} alt="go" />
-        <div className="tech-icons-text">Go</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Node} alt="node" />
-        <div className="tech-icons-text">Node.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity fontSize={"24px"} />
-        <div className="tech-icons-text">Solidity</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Mongo} alt="mongoDb" />
-        <div className="tech-icons-text">Mongo DB</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redux} alt="redux" />
-        <div className="tech-icons-text">Redux</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs fontSize={"24px"} />
-        <div className="tech-icons-text">Next.js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="git" />
-        <div className="tech-icons-text">Git</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="firebase" />
-        <div className="tech-icons-text">Firebase</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redis} alt="redis" />
-        <div className="tech-icons-text">Redis</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Docker} alt="docker" />
-        <div className="tech-icons-text">Docker</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kubernates} alt="kubernetes" />
-        <div className="tech-icons-text">Kubernetes</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
-        <div className="tech-icons-text">Postgresql</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Java} alt="haskell" />
-        <div className="tech-icons-text">Java</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={HaskellIcon} alt="haskell" />
-        <div className="tech-icons-text">Haskell</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Tailwind} alt="tailwind" />
-        <div className="tech-icons-text">Tailwind CSS</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={MUI} alt="mui" />
-        <div className="tech-icons-text">Material UI</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Postman} alt="Postman" />
-        <div className="tech-icons-text">Postman</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <FaRust fontSize={"24px"} />
-        <div className="tech-icons-text">Rust</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={AWS} alt="Postman" className="tech-icon-images" />
-        <div className="tech-icons-text">AWS</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kafka} alt="Kafka" className="tech-icon-images" />
-        <div className="tech-icons-text">Kafka</div>
-      </Col>
-    </Row>
+    <div className="skills-container pb-4">
+      {skillCategories.map((cat, idx) => (
+        <div key={idx} className="skill-category-block mb-4">
+          <h3 className="skill-category-title">
+            {cat.category}
+          </h3>
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            {cat.skills.map((skill, sIdx) => (
+              <Col key={sIdx} xs={6} sm={4} md={3} lg={2} className="tech-icons">
+                <span className="tech-icon-svg" style={{ fontSize: "1.4em", display: "flex", alignItems: "center" }}>
+                  {skill.icon}
+                </span>
+                <div className="tech-icons-text" style={{ fontSize: "0.88rem", fontWeight: "500" }}>{skill.name}</div>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      ))}
+    </div>
   );
 }
 

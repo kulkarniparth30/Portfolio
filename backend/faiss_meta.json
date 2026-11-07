@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": 0,
+    "content": "# About Parth Kulkarni\n\n- **Full Name**: Parth Kulkarni\n- **Professional Title**: AI/ML Engineer | Generative AI & Agentic Systems Developer\n- **Location**: Pune, Maharashtra, India\n- **Phone**: +91 8999126149\n- **Email**: kulkarniparth0930@gmail.com\n- **GitHub**: https://github.com/kulkarniparth30\n- **LinkedIn**: https://www.linkedin.com/in/parth-kulkarni-39260432a/\n- **Kaggle**: Published 5+ datasets, 10+ notebooks with 9,400+ views on top dataset.\n- **Summary**:\n  Computer Science student building privacy-first, agentic AI applications: LangGraph/MCP multi-agent systems, RAG pipelines, and fully on-device LLM inference in the browser. Shipped deployed projects including a resume analyser with a skill hallucination detector, submitted an async policy-enforcement PR to an open-source AI-agent guardrails library, and finished Top 10 in both rounds of Datathon ML Hackathon conducted by PCCOE College. Focused on reliable, secure AI that keeps user data under the user's control.\n- **Core Engineering Principles**:\n  - Privacy-first AI: Running inference locally or in-browser (WebLLM) when sensitive data is involved.\n  - Deterministic evaluation & guardrails: Implementing pre-execution tool policies and hallucination detectors.\n  - Multi-Agent Orchestration: Designing state graphs (LangGraph) and Model Context Protocol (MCP) tool integrations over brittle prompt-only architectures.",
+    "source": "about_me.md",
+    "title": "About Parth Kulkarni"
+  },
+  {
+    "chunk_id": 1,
+    "content": "# Achievements & Activities\n\n- **Top 10 in Datathon ML Hackathon (PCCOE College)**: Finished Top 10 in both rounds of the Datathon Machine Learning Hackathon conducted by Pimpri Chinchwad College of Engineering (PCCOE).\n- **Hackathon Competitor**: Active competitor across 5+ hackathons including DevClash 2026 and IBM Dev Day.\n- **Kaggle Contributor**: Published 5+ machine learning datasets and 10+ analysis notebooks on Kaggle, garnering over 9,400+ views on the top dataset.\n- **Coding Club Leadership**: Core Member of the Machine Learning & Data Science Team at Coding Club RSCOE.\n- **Open-Source Impact**: Authored +592 lines in PR #143 for `agent-guard`, implementing asynchronous high-concurrency tool-call policy enforcement.\n- **Research Paper Co-Author**: Co-authored *\"AI-Powered Career Diagnostics and Resume Enhancement System\"* (currently under peer review).",
+    "source": "achievements.md",
+    "title": "Achievements & Activities"
+  },
+  {
+    "chunk_id": 2,
+    "content": "# Career Interests & Objectives\n\n- **Target Engineering Roles**:\n  - AI/ML Engineer\n  - Generative AI & Agentic Systems Developer\n  - RAG Systems & LLM Platform Engineer\n  - Machine Learning Engineer (Privacy-First / On-Device AI)\n- **Technical Passions**:\n  - Multi-Agent Orchestration with LangGraph, CrewAI, and Model Context Protocol (MCP).\n  - Privacy-preserving on-device LLM inference using WebLLM, Transformers.js, and WebGPU.\n  - Production RAG pipelines, dense vector retrieval with FAISS, and guardrail enforcement.\n- **Location & Availability**: Pune, Maharashtra, India. Open to global remote, hybrid, or on-site engineering roles.",
+    "source": "career_interests.md",
+    "title": "Career Interests & Objectives"
+  },
+  {
+    "chunk_id": 3,
+    "content": "# Certifications\n\n- **Oracle Certified Foundations Associate \u2013 Agentic AI** (Oracle)\n- **Oracle Cloud Infrastructure 2025 Certified Data Science Professional** (Oracle)\n- **Machine Learning with Python** (IBM)",
+    "source": "certifications.md",
+    "title": "Certifications"
+  },
+  {
+    "chunk_id": 4,
+    "content": "### JSPM's Rajarshi Shahu College of Engineering (RSCOE), Pune\n- **Degree**: Bachelor of Technology (B.Tech) in Computer Engineering\n- **Current CGPA**: 8.11 / 10\n- **Graduation Year**: Expected 2028\n- **Relevant Coursework**: Data Structures & Algorithms, Database Management Systems (DBMS), Object-Oriented Programming (OOP), Distributed System Design, Linear Algebra & Probability.\n- **Campus Involvement**: Core Member of ML & Data Science Team, Coding Club RSCOE.",
+    "source": "education.md",
+    "title": "JSPM's Rajarshi Shahu College of Engineering (RSCOE), Pune"
+  },
+  {
+    "chunk_id": 5,
+    "content": "### Mahatma Phule Junior College, Ahmadpur\n- **Certification**: Higher Secondary Certificate (Class XII)\n- **Year**: 2024\n- **Academic Score**: MHT-CET Percentile: 95.25",
+    "source": "education.md",
+    "title": "Mahatma Phule Junior College, Ahmadpur"
+  },
+  {
+    "chunk_id": 6,
+    "content": "### Q: What are Parth Kulkarni's technical skills?\nA: Parth specializes in:\n- **AI & Agentic Systems**: LangGraph, LangChain, CrewAI, Model Context Protocol (MCP), RAG pipelines, WebLLM (on-device in-browser inference), Prompt Engineering, Guardrails & AI Security, LangSmith, Langfuse.\n- **Languages**: Python, C++, C, JavaScript, SQL.\n- **Backend & Systems**: FastAPI, Flask, REST APIs, asyncio, Supabase, PostgreSQL, Docker.\n- **ML & Deep Learning**: PyTorch, Scikit-learn, TensorFlow, Hugging Face (MiniLM, Transformers.js), Pandas, NumPy.\n- **Tools & Platforms**: Git/GitHub, Docker, Google Cloud Platform (GCP).",
+    "source": "frequently_asked_questions.md",
+    "title": "Q: What are Parth Kulkarni's technical skills?"
+  },
+  {
+    "chunk_id": 7,
+    "content": "### Q: Tell me about his flagship projects.\nA: Parth has built:\n1. **ResumeAgent**: An AI resume analyser and ATS ranker with a skill-hallucination detector that flags claimed skills lacking project proof, Gemini-primary + Groq-fallback architecture, live A4 editor, and Docker + Render deploy.\n2. **StudyMind AI**: A 100% on-device, privacy-first notes RAG assistant running WebLLM and MiniLM embeddings in the browser using Web Workers and WebGPU with offline capabilities.\n3. **Omni-Agent**: A LangGraph + MCP multi-agent assistant routing queries to hosted MCP servers (Context7, DeepWiki, Semgrep) and custom REST APIs.\n4. **agent-guard Open Source Contribution**: Authored PR #143 (+592 lines) implementing async policy enforcement for AI agent tool calls with 23 pytest-asyncio tests.\n5. **KisanSetu**: Multimodal crop-disease diagnosis system with cloud RAG and edge ResNet50 fallback.\n6. **Datathon ML Hackathon**: Finished Top 10 in both rounds of the Datathon ML Hackathon conducted by PCCOE College.",
+    "source": "frequently_asked_questions.md",
+    "title": "Q: Tell me about his flagship projects."
+  },
+  {
+    "chunk_id": 8,
+    "content": "### Q: What is his educational background?\nA: Parth is pursuing a B.Tech in Computer Engineering at JSPM's Rajarshi Shahu College of Engineering (RSCOE), Pune (Expected 2028, CGPA: 8.11/10). He completed his Higher Secondary Certificate (Class XII) at Mahatma Phule Junior College, Ahmadpur (2024, MHT-CET Percentile: 95.25).",
+    "source": "frequently_asked_questions.md",
+    "title": "Q: What is his educational background?"
+  },
+  {
+    "chunk_id": 9,
+    "content": "### Q: What certifications does Parth hold?\nA:\n- Oracle Certified Foundations Associate \u2013 Agentic AI\n- Oracle Cloud Infrastructure 2025 Certified Data Science Professional\n- Machine Learning with Python (IBM)",
+    "source": "frequently_asked_questions.md",
+    "title": "Q: What certifications does Parth hold?"
+  },
+  {
+    "chunk_id": 10,
+    "content": "### Q: How can I contact Parth?\nA: You can reach Parth by:\n- Email: kulkarniparth0930@gmail.com\n- Phone: +91 8999126149\n- LinkedIn: https://www.linkedin.com/in/parth-kulkarni-39260432a/\n- GitHub: https://github.com/kulkarniparth30",
+    "source": "frequently_asked_questions.md",
+    "title": "Q: How can I contact Parth?"
+  },
+  {
+    "chunk_id": 11,
+    "content": "### 1. Omni-Agent \u2014 Multi-Tool LangGraph & MCP AI Assistant (2026)\n- **Tech Stack**: Python, LangChain, LangGraph, MCP, FastAPI, REST APIs, pytest, LLM Evaluation, Git/GitHub\n- **GitHub**: https://github.com/kulkarniparth30/Omni-Agent\n- **Problem**: LLMs cannot reliably interface with live external environments and frequently hallucinate API tool calls when lacking context.\n- **Solution & Architecture**:\n  - Built an LLM-powered multi-agent assistant in Python using LangGraph where the model autonomously selects tools across hosted Model Context Protocol (MCP) servers (Context7, DeepWiki, Semgrep) and a custom FastAPI arithmetic tool server.\n  - Engineered prompt and tool-routing logic to eliminate multi-tool chaining failures and cut hallucinated tool calls.\n  - Restructured the codebase into modular tools/, prompts/, and evals/ layers behind a FastAPI API layer.\n  - Implemented automated testing (pytest) and an evaluation suite to benchmark tool selection and response relevance.\n  - Authored reproducible documentation covering architecture, setup, and experimental benchmarks.",
+    "source": "projects.md",
+    "title": "1. Omni-Agent \u2014 Multi-Tool LangGraph & MCP AI Assistant (2026)"
+  },
+  {
+    "chunk_id": 12,
+    "content": "### 2. KisanSetu \u2014 Agentic Multimodal AI Platform for Crop Disease Diagnosis (2026)\n- **Tech Stack**: Python, FastAPI, LangChain, Gemini 2.5 Flash, Vector Databases, ResNet50, Google Cloud Platform, Twilio\n- **GitHub**: https://github.com/kulkarniparth30/kisanSetu\n- **Problem**: Farmers receive hallucinated or generalized crop disease advice from raw LLMs and often lack continuous smartphone internet connectivity.\n- **Solution & Architecture**:\n  - Solved hallucinated crop-disease advice by building a RAG pipeline (embeddings + vector database, LangChain) over verified agricultural knowledge bases to ground Gemini 2.5 Flash responses via FastAPI.\n  - Added an offline ResNet50 image-classification fallback for farmers in low-connectivity areas; benchmarked quality vs latency against the cloud multimodal path.\n  - Deployed containerized on Google Cloud Platform with a multilingual Twilio IVR so non-smartphone, regional-language users can reach diagnosis by phone in Marathi, Hindi, and English.",
+    "source": "projects.md",
+    "title": "2. KisanSetu \u2014 Agentic Multimodal AI Platform for Crop Disease Diagnosis (2026)"
+  },
+  {
+    "chunk_id": 13,
+    "content": "### 3. ResumeAgent \u2014 AI Resume Analyser, ATS Ranker & Skill-Gap Detector (2026)\n- **Tech Stack**: Python, LangGraph, FastAPI, React, Vite, Tailwind CSS, Pydantic, Supabase, Docker, Render\n- **GitHub**: https://github.com/kulkarniparth30/ResumeAgent\n- **Problem**: Candidates do not know why Automated Tracking Systems (ATS) reject resumes or which exact skills are missing for a role.\n- **Solution & Architecture**:\n  - Full-stack FastAPI + React app parsing PDF/DOCX resumes and scoring candidate match against job descriptions with a visual skill-gap matrix.\n  - Designed an innovative Skill Hallucination Detector that audits resumes to flag claimed skills lacking project context or proof.\n  - Multi-LLM resilient architecture: Primary Google Gemini inference with dynamic Groq fallback for high reliability.\n  - Live A4 resume editor with AI enhancement, PDF export, Supabase history, and Docker + Render deployment.\n  - Co-authored research paper: \"AI-Powered Career Diagnostics and Resume Enhancement System\" (under review).",
+    "source": "projects.md",
+    "title": "3. ResumeAgent \u2014 AI Resume Analyser, ATS Ranker & Skill-Gap Detector (2026)"
+  },
+  {
+    "chunk_id": 14,
+    "content": "### 4. StudyMind AI \u2014 Offline On-Device RAG & Multi-Agent Study Assistant (2026)\n- **Tech Stack**: React 18, Vite, WebLLM, Llama-3.2-1B, Transformers.js, CrewAI, IndexedDB, WebGPU, FastAPI\n- **GitHub**: https://github.com/kulkarniparth30/NOTES_RAG_ASSISTANT\n- **Recognition**: Built for OSDHack 2026\n- **Problem**: Traditional student RAG tools leak private lecture notes to cloud servers and incur costly per-token inference charges.\n- **Solution & Architecture**:\n  - Implemented 100% on-device RAG in the browser via WebGPU & Web Workers running Llama-3.2-1B and Phi-3.5-mini locally with zero external API calls.\n  - Built CrewAI multi-agent tools orchestrating specialized agents for autonomous quiz generation, personalized study schedules, and flashcard extraction.\n  - Engineered client-side vector search caching MiniLM embeddings locally in IndexedDB for instant sub-second retrieval across large textbooks.\n  - Streaming responses at 48+ tokens/second locally with zero cloud subscription or token costs.",
+    "source": "projects.md",
+    "title": "4. StudyMind AI \u2014 Offline On-Device RAG & Multi-Agent Study Assistant (2026)"
+  },
+  {
+    "chunk_id": 15,
+    "content": "### 5. PharmaComplaint AI \u2014 QMS Complaint Intake & LangGraph CAPA Engine (2026)\n- **Tech Stack**: Python, FastAPI, LangGraph, Groq AI (Llama 3.3 70B), React, Redux Toolkit, SQLite, Pydantic\n- **GitHub**: https://github.com/kulkarniparth30/pharma-complaint-ai\n- **Industry Standard**: 21 CFR Part 11 & GAMP-5 QMS Compliance\n- **Problem**: Pharmaceutical quality management teams spend days manually reviewing customer complaint emails and medical defect reports.\n- **Solution & Architecture**:\n  - Engineered a multi-stage LangGraph state graph pipeline (`ingest -> extract -> validate -> risk -> capa -> summary`) parsing unstructured complaint forms.\n  - Built automated critical-risk triage classifying sterility failures, packaging defects, and contamination under GAMP-5 regulatory severity levels.\n  - Integrated intelligent CAPA recommendation engine generating standardized Corrective and Preventive Actions with SLA assignments.\n  - Implemented regulatory audit logging with SHA-256 data validation and automated regulatory draft generation via Groq Llama 3.3 70B in under 350ms.",
+    "source": "projects.md",
+    "title": "5. PharmaComplaint AI \u2014 QMS Complaint Intake & LangGraph CAPA Engine (2026)"
+  },
+  {
+    "chunk_id": 16,
+    "content": "### 6. ReelFlow AI \u2014 Automated Viral Reel & Short-Form Video Generator (2026)\n- **Tech Stack**: Python, Flask, FFmpeg, Google Text-to-Speech (gTTS), MoviePy, Jinja2, Bootstrap 5, CSS3 Glassmorphism\n- **GitHub**: https://github.com/kulkarniparth30/ReelFlow-AI\n- **Problem**: Content creators spend hours recording voiceovers, timing image transitions, and burning captions into short-form videos.\n- **Solution & Architecture**:\n  - Built an automated video generation pipeline using Python and FFmpeg stitching multi-image uploads with dynamic pan/zoom transitions (Ken Burns).\n  - Integrated free, API-keyless AI voiceover synthesis via Google Text-to-Speech (gTTS) with automatic speech cadence detection.\n  - Designed automated audio ducking reducing background music volume during spoken voiceover segments.\n  - Built real-time multi-stage rendering progress tracking (Queued -> Audio -> Video -> Done) with instant 1080x1920 60FPS MP4 export.",
+    "source": "projects.md",
+    "title": "6. ReelFlow AI \u2014 Automated Viral Reel & Short-Form Video Generator (2026)"
+  },
+  {
+    "chunk_id": 17,
+    "content": "### 7. Open Source Contributor \u2014 agent-guard (AI-Agent Tool-Call Policy Enforcement) (Sep 2026)\n- **Tech Stack**: Python, asyncio, pytest-asyncio, Git/GitHub\n- **Pull Request**: PR #143 (+592 lines)\n- **Contributions**:\n  - Implemented async policy enforcement for agent tool calls (`check_async` and `check_batch_async`), evaluating calls concurrently with `asyncio.gather` and returning structured `PolicyDecision` results with opt-in `PolicyViolation` exceptions.\n  - Wrote 23 pytest-asyncio tests (including 100 concurrent calls) and updated documentation.",
+    "source": "projects.md",
+    "title": "7. Open Source Contributor \u2014 agent-guard (AI-Agent Tool-Call Policy Enforcement) (Sep 2026)"
+  },
+  {
+    "chunk_id": 18,
+    "content": "# Resume Summary\n\n- **Candidate**: Parth Kulkarni\n- **Contact**: Pune, Maharashtra, India | +91 8999126149 | kulkarniparth0930@gmail.com\n- **Profiles**: [GitHub](https://github.com/kulkarniparth30) | [LinkedIn](https://www.linkedin.com/in/parth-kulkarni-39260432a/) | Kaggle\n- **Education**: B.Tech in Computer Engineering at JSPM's RSCOE, Pune (CGPA: 8.11/10, Expected 2028). Class XII MHT-CET Percentile: 95.25.\n- **Key Roles**: AI/ML Engineer, Generative AI Developer, Multi-Agent Systems Engineer.\n- **Key Projects**: ResumeAgent, StudyMind AI, Omni-Agent, KisanSetu, open-source contributor to `agent-guard` (PR #143).\n- **Certifications**: Oracle Agentic AI Associate, Oracle OCI 2025 Data Science Professional, IBM Machine Learning with Python.\n- **Resume PDF**: Can be viewed and downloaded directly on the portfolio website at `/resume`.",
+    "source": "resume.md",
+    "title": "Resume Summary"
+  },
+  {
+    "chunk_id": 19,
+    "content": "## 1. AI, LLMs & Agentic Systems\n- **AI Agents & Multi-Agent Systems**: LangGraph state graphs, LangChain, CrewAI agent crews, Model Context Protocol (MCP) tool integration.\n- **Retrieval-Augmented Generation (RAG)**: Hybrid dense & sparse search, context chunking, cross-encoder re-ranking, persistent browser vector search, streaming citations.\n- **LLM Engineering & Inference**: Large Language Models (LLMs), Prompt Engineering, WebLLM (in-browser inference via WebGPU/Web Workers for Phi-3.5-mini & Llama-3.2-1B), Transformers.js, Hugging Face (MiniLM-L6-v2).\n- **Evaluation, Observability & Guardrails**: LangSmith, Langfuse, Guardrails & AI Security, tool policy enforcement (asyncio), hallucination detection, RAG Triad benchmarking.\n- **Embeddings & Vector Databases**: Dense embeddings (SentenceTransformers, MiniLM), FAISS, Vector Databases, Supabase Vector.",
+    "source": "skills.md",
+    "title": "1. AI, LLMs & Agentic Systems"
+  },
+  {
+    "chunk_id": 20,
+    "content": "## 2. Programming Languages\n- **Python**: Primary language for AI agents, RAG, PyTorch, asyncio concurrency, and FastAPI services.\n- **C++**: Algorithmic problem solving, low-level efficiency, and data structures.\n- **C**: Systems programming and foundational computing.\n- **JavaScript**: Web engineering, Web Workers, client-side model execution, React.\n- **SQL**: Relational database modeling, complex joins, schema design, and query optimization.",
+    "source": "skills.md",
+    "title": "2. Programming Languages"
+  },
+  {
+    "chunk_id": 21,
+    "content": "## 3. Backend & Distributed Systems\n- **FastAPI**: High-performance asynchronous REST APIs, Pydantic validation, streaming responses.\n- **Flask**: Microservice architecture and lightweight model serving.\n- **Concurrency**: Python `asyncio` for high-concurrency tool execution and policy checks.\n- **Databases**: Supabase, PostgreSQL, SQLite.\n- **Containerization**: Docker, Docker Compose for production deployments.",
+    "source": "skills.md",
+    "title": "3. Backend & Distributed Systems"
+  },
+  {
+    "chunk_id": 22,
+    "content": "## 4. Machine Learning & Core Data\n- **Libraries**: PyTorch, Scikit-learn, TensorFlow, Pandas, NumPy.\n- **Deep Learning**: CNNs, Transformer backbones, Transfer Learning, model fine-tuning.",
+    "source": "skills.md",
+    "title": "4. Machine Learning & Core Data"
+  },
+  {
+    "chunk_id": 23,
+    "content": "## 5. Development Tools & Cloud\n- **Version Control**: Git, GitHub (Pull requests, CI testing).\n- **Cloud & Deployment**: Google Cloud Platform (GCP), Render, Supabase.\n- **Testing & Quality**: pytest, pytest-asyncio (concurrent evaluation test suites).",
+    "source": "skills.md",
+    "title": "5. Development Tools & Cloud"
+  }
+]

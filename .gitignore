@@ -11,6 +11,17 @@
 # production
 /build
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
 # misc
 .DS_Store
 .env
@@ -24,6 +35,3 @@ yarn-debug.log*
 yarn-error.log*
 
 .eslintcache
-
-Server/node_modules
-Server/config.js

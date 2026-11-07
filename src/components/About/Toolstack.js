@@ -1,30 +1,34 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
-import chrome from "../../Assets/TechIcons/Google Chrome.svg";
-import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+import {
+  SiVisualstudiocode,
+  SiPostman,
+  SiDocker,
+  SiLinux,
+  SiGit,
+  SiGooglecloud,
+} from "react-icons/si";
 
 function Toolstack() {
+  const tools = [
+    { name: "VS Code", icon: <SiVisualstudiocode color="#007ACC" /> },
+    { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+    { name: "Linux / WSL", icon: <SiLinux color="#FCC624" /> },
+    { name: "Postman", icon: <SiPostman color="#FF6C37" /> },
+    { name: "Google Cloud", icon: <SiGooglecloud color="#4285F4" /> },
+    { name: "Git", icon: <SiGit color="#F05032" /> },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
-      </Col>
+      {tools.map((t, idx) => (
+        <Col key={idx} xs={6} sm={4} md={2} className="tech-icons">
+          <span style={{ fontSize: "1.4em", display: "flex", alignItems: "center" }}>
+            {t.icon}
+          </span>
+          <div className="tech-icons-text" style={{ fontSize: "0.88rem", fontWeight: "500" }}>{t.name}</div>
+        </Col>
+      ))}
     </Row>
   );
 }
